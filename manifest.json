@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Epic-for-free-included",
+    "version": "0.1",
+    "description": "Ludenoid is an add-on made as per her recommendation. ",
+    "icons": {
+        "16" : "/images/icon_16.png",
+        "48" : "/images/icon_48.png",
+        "128" : "/images/icon_128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16" : "/images/icon_16_active.png",
+            "48" : "/images/icon_48_active.png",
+            "128" : "/images/icon_128_active.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://store.steampowered.com/app/*"],
+        "js": ["content-script.js"]
+
+    }]
+    
+}
